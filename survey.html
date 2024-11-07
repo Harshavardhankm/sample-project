@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body background="file/bg.jpg">
+    <h1 align="center" style="color: white;">SURVEY FORM</h1>
+    <form action="">
+        <fieldset width="50%" style="background-color: white;" align="center">
+            <div>
+                <p>Let us know how we can improve</p>
+            </div>
+            <div>
+                <label for="name">Name  </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            </div>
+            <div>
+                <label for="email">Email  </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            </div>
+            <div>
+                <label for="age">Age  </label>
+                <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+            </div>
+            <div>
+                <input type="file">
+            </div><br>
+            <div>
+                <label for="role">Which option best describes your current role  </label>
+                <select name="role" id="role">
+                    <option value="" disabled selected>Select role</option>
+                    <option value="student">student</option>
+                    <option value="fresher">fresher</option>
+                    <option value="freelancer">freelancer</option>
+                    <option value="working">working</option>
+                </select><br><br>
+            </div>
+            <div>
+                <table align="center">
+                    <tr>
+                        <td rowspan="3"><label for="">How likely is that you would recommend this <br> program to a friend ?</label></td>
+                        <td><input type="radio" name="recommend" value="definitely"> Definitely</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="recommend" value="maybe"> may be</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="recommend" value="Not sure"> Not sure</td>
+                    </tr>
+                </table><br>
+            </div>
+            <div>
+                <label for="role">What do you like most here</label>
+                <select name="like" id="like">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="sports">sports</option>
+                    <option value="music">music</option>
+                    <option value="arts">arts</option>
+                    <option value="reading">reading</option>
+                </select><br><br>
+            </div>
+            <div>
+                <table align="center">
+                    <tr>
+                        <td rowspan="3"><label for="">Things that should be improved in the future<br>(Check all that apply)</label></td>
+                        <td><input type="checkbox" name="frontend" value="frontend"> Front-end project</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="backend" value="backend"> back-end project</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="datav" value="datavisualization"> Data visualization</td>
+                    </tr>
+                </table><br>
+            </div>
+            <div>
+                <label for="suggetions">Any comments or suggetions ? </label>
+                <textarea style="width: 20%;" name="suggetions" id="suggetions" placeholder="Enter your comments here....."></textarea>
+            </div><br>
+            <div>
+                <input type="submit" style="background-color: blue; color: floralwhite;">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
